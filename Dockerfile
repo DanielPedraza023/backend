@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copia el archivo .jar dentro del contenedor
-COPY build/libs/demo-0.0.1-SNAPSHOT.jar /app/demo.jar
+COPY demo-0.0.1-SNAPSHOT.jar /app/demo.jar
 
 # Comando para ejecutar el .jar
 CMD ["java", "-jar", "demo.jar"]
